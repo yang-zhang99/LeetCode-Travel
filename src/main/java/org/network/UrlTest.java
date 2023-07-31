@@ -38,6 +38,9 @@ public class UrlTest {
              */
             //获取URLConnection对象对应的输入流
             InputStream is = conn.getInputStream();
+
+            byte[]  c = is.readAllBytes();
+
             //构造一个字符流缓存
             br = new BufferedReader(new InputStreamReader(is));
             String str = "";
